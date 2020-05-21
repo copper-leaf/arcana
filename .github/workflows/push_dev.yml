@@ -1,12 +1,12 @@
 # On pushes to dev, or PRs to master or dev, run tests on all supported platforms
 
-name: 'Push Dev (Verify)'
+name: 'Push/PR to `dev` (Verify Integration)'
 
 on:
   push:
     branches: ['dev']
   pull_request:
-    branches: ['master', 'dev']
+    branches: ['dev']
 
 jobs:
   buildCachesOnAll:

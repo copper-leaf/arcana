@@ -1,10 +1,10 @@
-# On pushes to master, run tests on all supported platforms. If all tests pass, then publish release artifacts and
-# update Orchid documentation site.
+# On PRs to master, run tests on all supported platforms. Also do a dry publish of Orchid to validate its publishing
+# pipeline is configured correctly and changelog entries are present
 
-name: 'Push to `master` (Create Release)'
+name: 'PR to `master` (Verify Release)'
 
 on:
-  push:
+  pull_request:
     branches: ['master']
 
 jobs:
@@ -28,7 +28,7 @@ jobs:
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle') }}
           restore-keys: '${{ runner.os }}-gradle'
       - name: 'Assemble with Gradle'
-        run: './gradlew assemble --no-daemon --stacktrace -Prelease -PorchidEnvironment=prod'
+        run: './gradlew assemble --no-daemon --stacktrace -Prelease'
   testOnAll:
     needs: ['buildCachesOnAll']
     strategy:
@@ -52,25 +52,4 @@ jobs:
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle') }}
           restore-keys: '${{ runner.os }}-gradle'
       - name: 'Run checks with Gradle'
-        run: './gradlew check --no-daemon --stacktrace -Prelease -PorchidEnvironment=prod'
-  publishOnMacOs:
-    runs-on: 'macos-latest'
-    needs: ['testOnAll']
-    steps:
-      - uses: 'actions/checkout@v2'
-      - run: 'git fetch --prune --unshallow --tags'
-      - name: 'Set up JDK 1.8'
-        uses: 'actions/setup-java@v1'
-        with:
-          java-version: 1.8
-      - name: 'Cache Gradle packages'
-        uses: 'actions/cache@v1'
-        with:
-          path: '~/.gradle/caches'
-          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle') }}
-          restore-keys: '${{ runner.os }}-gradle'
-      - name: 'Publish to GitHub Packages'
-        run: './gradlew publish --no-daemon --stacktrace -Prelease -PorchidEnvironment=prod'
-        env:
-          GITHUB_ACTOR: '${{ github.actor }}'
-          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
+        run: './gradlew check :docs:publish --no-daemon --stacktrace -Prelease -PorchidEnvironment=prod -PorchidDryDeploy=true -PorchidDiagnose=true'

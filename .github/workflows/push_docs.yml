@@ -1,6 +1,6 @@
 # On pushes to `docs` branch, build and publish the Orchid documentation site
 
-name: 'Push Docs (Update Docs)'
+name: 'Push to `docs` (Update Docs Site)'
 
 on:
   push:
