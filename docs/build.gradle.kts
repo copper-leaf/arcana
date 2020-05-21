@@ -32,6 +32,11 @@ orchid {
 val build by tasks
 val check by tasks
 val orchidBuild by tasks
+val orchidDeploy by tasks
 
-build.dependsOn(orchidBuild)
 orchidBuild.mustRunAfter(check)
+build.dependsOn(orchidBuild)
+
+val publish by tasks.registering {
+    dependsOn(orchidDeploy)
+}
