@@ -49,7 +49,6 @@ kotlindoc:
 services:
   publications:
     stages:
-      - type: requireChangelogVersion
       - type: githubReleases
         repo: 'copper-leaf/arcana'
         username: 'cjbrooks12'
