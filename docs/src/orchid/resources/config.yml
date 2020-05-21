@@ -1,0 +1,58 @@
+site:
+  theme: 'Copper'
+  baseUrl: 'https://copper-leaf.github.io/arcana'
+
+theme:
+  metaComponents:
+    - type: "prism"
+      githubTheme: 'duotone-light'
+      languages:
+        - java
+        - kotlin
+        - groovy
+        - swift
+  menu:
+    - type: 'page'
+      itemId: 'Home'
+    - type: 'page'
+      itemId: 'Releases'
+    - type: 'wiki'
+    - type: 'sourcedocModules'
+      moduleType:  'kotlindoc'
+
+changelog:
+  adapter:
+    type: "file"
+    baseDir: "./../../../../"
+
+snippets:
+  sections:
+    - tags: ['embedded_snippets']
+      adapter:
+        type: 'embedded'
+        recursive: true
+        baseDirs:
+          - './../../../../core/src/commonTest/kotlin/'
+          - './../../../../core/src/jvmTest/kotlin/'
+          - './../../../../core/src/androidTest/kotlin/'
+          - './../../../../core/src/jsTest/kotlin/'
+          - './../../../../core/src/iosTest/kotlin/'
+
+kotlindoc:
+  modules:
+    - { name: 'Core',    slug: 'core',    sourceDirs: './../../../../core/src/commonMain/kotlin/'                                   }
+    - { name: 'JVM',     slug: 'jvm',     sourceDirs: './../../../../core/src/jvmMain/kotlin/',     relatedModules: ['Core']        }
+    - { name: 'Android', slug: 'android', sourceDirs: './../../../../core/src/androidMain/kotlin/', relatedModules: ['JVM', 'Core'] }
+    - { name: 'JS',      slug: 'js',      sourceDirs: './../../../../core/src/jsMain/kotlin/',      relatedModules: ['Core']        }
+    - { name: 'iOS',     slug: 'ios',     sourceDirs: './../../../../core/src/iosMain/kotlin/',     relatedModules: ['Core']        }
+
+services:
+  publications:
+    stages:
+      - type: requireChangelogVersion
+      - type: githubReleases
+        repo: 'orchidhq/orchid'
+        username: 'cjbrooks12'
+        commitish: 'master'
+      - type: githubPages
+        repo: 'orchidhq/orchid'
