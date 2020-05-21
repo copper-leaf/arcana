@@ -1,0 +1,19 @@
+{
+  "ownKey": "pages",
+  "childrenPages": {"releases": {
+    "ownKey": "releases",
+    "ownPages": [{
+      "reference": {
+        "path": "",
+        "baseUrl": "https://copper-leaf.github.io/arcana",
+        "fileName": "releases",
+        "extension": "html",
+        "usePrettyUrl": true,
+        "link": "https://copper-leaf.github.io/arcana/releases"
+      },
+      "description": "",
+      "title": "Releases",
+      "content": ""
+    }]
+  }}
+}

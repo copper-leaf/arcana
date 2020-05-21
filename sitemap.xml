@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/siteindex.xsd"
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <sitemap>
+        <loc>https://copper-leaf.github.io/arcana/sitemap-assets.xml</loc>
+        <lastmod>2020-05-21</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>https://copper-leaf.github.io/arcana/sitemap-external.xml</loc>
+        <lastmod>2020-05-21</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>https://copper-leaf.github.io/arcana/sitemap-changelog.xml</loc>
+        <lastmod>2020-05-21</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>https://copper-leaf.github.io/arcana/sitemap-forms.xml</loc>
+        <lastmod>2020-05-21</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>https://copper-leaf.github.io/arcana/sitemap-home.xml</loc>
+        <lastmod>2020-05-21</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>https://copper-leaf.github.io/arcana/sitemap-kotlindoc.xml</loc>
+        <lastmod>2020-05-21</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>https://copper-leaf.github.io/arcana/sitemap-pages.xml</loc>
+        <lastmod>2020-05-21</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>https://copper-leaf.github.io/arcana/sitemap-wiki.xml</loc>
+        <lastmod>2020-05-21</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>https://copper-leaf.github.io/arcana/sitemap-sitemap.xml</loc>
+        <lastmod>2020-05-21</lastmod>
+    </sitemap>
+    <sitemap>
+        <loc>https://copper-leaf.github.io/arcana/sitemap-indices.xml</loc>
+        <lastmod>2020-05-21</lastmod>
+    </sitemap>
+    
+</sitemapindex>

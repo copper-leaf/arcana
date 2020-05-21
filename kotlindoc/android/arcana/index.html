@@ -1,0 +1,507 @@
+
+
+<!DOCTYPE html>
+<html class="">
+<head>
+
+
+
+
+<meta charset="utf-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+<meta name="generator" content="Orchid 0.20.0-SNAPSHOT"/>
+<link rel="icon" href="https://copper-leaf.github.io/arcana/favicon.ico">
+
+
+<meta name="robots" content="index, follow">
+
+
+
+<title>arcana</title>
+
+
+<meta name="description" content="">
+
+
+
+
+
+<script>
+    window.site = {"orchidVersion":"0.20.0-SNAPSHOT","baseUrl":"https://copper-leaf.github.io/arcana","environment":"prod","version":"0.1.4"};
+</script>
+
+
+
+
+    <!-- start:inject meta-components -->
+    
+        
+            
+        
+    
+    <!-- end:inject meta-components -->
+
+
+
+    <!-- start:inject meta-components -->
+    
+    <!-- end:inject meta-components -->
+
+
+
+
+
+<!-- start:inject styles -->
+<link rel="stylesheet" type="text/css" href="https://copper-leaf.github.io/arcana/Copper/6826c43f/assets/css/bulma.css"  />
+<link rel="stylesheet" type="text/css" href="https://copper-leaf.github.io/arcana/Copper/6826c43f/assets/css/extraCss.css"  />
+<link rel="stylesheet" type="text/css" href="https://copper-leaf.github.io/arcana/Copper/6826c43f/assets/css/bulma-tooltip.css"  />
+<link rel="stylesheet" type="text/css" href="https://copper-leaf.github.io/arcana/Copper/6826c43f/assets/css/bulma-accordion.min.css"  />
+<link rel="stylesheet" type="text/css" href="https://copper-leaf.github.io/arcana/PrismJS/prism-themes/master/themes/prism-duotone-light.css"  />
+<link rel="stylesheet" type="text/css" href="https://copper-leaf.github.io/arcana/assets/css/orchidSourceDoc.css"  />
+<!-- end:inject styles -->
+
+</head>
+<body class="">
+
+
+<div class="columns is-marginless is-desktop">
+
+  <div class="column is-one-third-desktop is-one-quarter-widescreen is-one-fifth-fullhd is-paddingless column-main-left is-hidden-mobile is-hidden-touch">
+  
+
+
+    
+
+
+<section class="hero is-primary hero-image is-fullheight">
+
+
+<!-- Hero header: will stick at the top -->
+<div class="hero-head" style="padding: 0 1.5rem">
+  <a href="https://copper-leaf.github.io/arcana"><img src="https://copper-leaf.github.io/arcana/assets/svg/orchid/logo_top_dark.svg" style="padding: 40px 40px 0 40px;"></a>
+  <p class="subtitle is-4 has-text-centered"></p>
+
+  <div class="columns is-mobile has-text-centered">
+  
+
+
+  
+
+
+  </div>
+</div>
+
+
+
+
+
+</section>
+
+  </div>
+  <div class="column is-one-third-desktop is-one-quarter-widescreen is-one-fifth-fullhd is-paddingless column-main-left is-hidden-desktop">
+  
+
+
+    
+
+
+<section class="hero is-primary hero-image ">
+
+
+<!-- Hero header: will stick at the top -->
+<div class="hero-head" style="padding: 0 1.5rem">
+  <a href="https://copper-leaf.github.io/arcana"><img src="https://copper-leaf.github.io/arcana/assets/svg/orchid/logo_top_dark.svg" style="padding: 40px 40px 0 40px;"></a>
+  <p class="subtitle is-4 has-text-centered"></p>
+
+  <div class="columns is-mobile has-text-centered">
+  
+
+
+  
+
+
+  </div>
+</div>
+
+
+
+
+
+</section>
+
+  </div>
+
+  <div class="column is-two-thirds-desktop is-three-quarters-widescreen is-four-fifths-fullhd is-paddingless column-main-right">
+  
+
+<nav
+  class="navbar is-white border-bottom"
+  role="navigation"
+  aria-label="main navigation"
+>
+  <div class="container">
+    <div class="navbar-brand is-marginless">
+
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMain">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div class="navbar-menu is-marginless" id="navbarMain">
+      <div class="navbar-start">
+      
+<div class="navbar-item">
+  <form id="search-input" data-orchid-search>
+    <div class="field is-marginless" id="search">
+      <div class="control has-icons-left input-control">
+        <input class="input" type="text" name="query" placeholder="Search ">
+
+        <span class="icon is-small is-left">
+          <i class="fas fa-search"></i>
+        </span>
+
+        <div id="search-progress" data-orchid-search-progress style="display: none;">
+          <div class="loader">Loading...</div>
+        </div>
+      </div>
+    </div>
+    <div id="search-results" data-orchid-search-results style="display: none;">
+      <div class="carat"></div>
+      <b>
+        Search Results
+        <i class="fa fa-times" aria-hidden="true" onclick="$('[data-orchid-search-results]').hide()"></i>
+      </b>
+      <ul></ul>
+    </div>
+  </form>
+</div>
+
+      
+
+  
+  
+    
+
+<a class="navbar-item " href="https://copper-leaf.github.io/arcana">
+Home
+</a>
+
+
+  
+
+  
+  
+    
+
+<a class="navbar-item " href="https://copper-leaf.github.io/arcana/releases">
+Releases
+</a>
+
+
+  
+
+  
+  
+    
+
+<a class="navbar-item " href="https://copper-leaf.github.io/arcana/wiki/page-one">
+Wiki Page One
+</a>
+
+
+  
+
+  
+  
+    
+
+<a class="navbar-item " href="https://copper-leaf.github.io/arcana/kotlindoc/android">
+Android
+</a>
+
+
+  
+
+  
+  
+    
+
+<a class="navbar-item " href="https://copper-leaf.github.io/arcana/kotlindoc/core">
+Core
+</a>
+
+
+  
+
+  
+  
+    
+
+<a class="navbar-item " href="https://copper-leaf.github.io/arcana/kotlindoc/js">
+JS
+</a>
+
+
+  
+
+  
+  
+    
+
+<a class="navbar-item " href="https://copper-leaf.github.io/arcana/kotlindoc/jvm">
+JVM
+</a>
+
+
+  
+
+  
+  
+    
+
+<a class="navbar-item " href="https://copper-leaf.github.io/arcana/kotlindoc/ios">
+iOS
+</a>
+
+
+  
+
+
+      </div>
+
+      <div class="navbar-end">
+      
+
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+    <div class="textured container" style="width: 100%;">
+    
+    
+    
+      <div class="box">
+      
+<nav class="breadcrumb" aria-label="breadcrumbs">
+<ul>
+
+
+    <li><a href="https://copper-leaf.github.io/arcana/kotlindoc/android">Android</a></li>
+
+
+
+    <li class="is-active"><a href="https://copper-leaf.github.io/arcana/kotlindoc/android/arcana" aria-current="page">arcana</a></li>
+
+
+</ul>
+</nav>
+
+
+      </div>
+    
+    
+    
+    
+    
+    
+      <div class="box" style="position: relative;">
+        <h2 class="title is-1 is-spaced">arcana</h2>
+        <p class="subtitle is-4"></p>
+        
+    <!-- start:inject components -->
+    
+        
+            
+                
+                    
+                        <div class="sourcedoc-page orchid-sourcedoc content">
+  
+<div class="sourcedoc-section section-root section-level-1" id="arcana">
+
+
+  <h1 class="sourcedoc-section section-name">Arcana</h1>
+  
+    <div class="sourcedoc-section section-element" id="ffd4450b4a0ea2f7023edf1439a83cfbeff1929e">
+      
+      <p class="sourcedoc-section section-signature">
+        <code>package <a href="https://copper-leaf.github.io/arcana/kotlindoc/core/arcana">arcana</a></code>
+      </p>
+      <div class="sourcedoc-section section-comments"></div>
+
+      
+      
+        
+          
+<div class="sourcedoc-section section-root section-level-2" id="methods">
+
+
+  <h2 class="sourcedoc-section section-name">Methods</h2>
+  
+    <div class="sourcedoc-section section-element" id="15e21ed8f50d15f9a127939f2b1ca03c3cf57d51">
+      
+      <h3 class="sourcedoc-section element-name">bootstrapAndroid</h3>
+      
+      <p class="sourcedoc-section section-signature">
+        <code>fun <a href="https://copper-leaf.github.io/arcana/kotlindoc/core/arcana/arcanaplatform">ArcanaPlatform</a>.bootstrapAndroid(): <a href="https://copper-leaf.github.io/arcana/kotlindoc/core/arcana/library">Library</a></code>
+      </p>
+      <div class="sourcedoc-section section-comments"></div>
+
+      
+      
+        
+          
+<div class="sourcedoc-section section-root section-level-3" id="4cd6fd40fe75234b00b26eaa00f1bbab1b7a5156">
+
+
+  <p class="sourcedoc-section section-name"><strong>Receiver</strong></p>
+
+  <div class="table-container">
+    <table class="table is-fullwidth is-bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      
+      <tr class="sourcedoc-section section-element" id="0a5086e0b127da8de186b56cdff4a0b5bbb72ffe">
+        <td class="sourcedoc-section section-signature">
+          <code><a href="https://copper-leaf.github.io/arcana/kotlindoc/core/arcana/arcanaplatform">ArcanaPlatform</a></code>
+        </td>
+        <td class="sourcedoc-section section-comments content">
+        
+        </td>
+      </tr>
+      
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+        
+          
+<div class="sourcedoc-section section-root section-level-3" id="f0b83fd8d2877507d5cc1fe4d187341ee62a2d97">
+
+
+  <p class="sourcedoc-section section-name"><strong>ReturnValue</strong></p>
+
+  <div class="table-container">
+    <table class="table is-fullwidth is-bordered">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      </thead>
+      <tbody>
+      
+      <tr class="sourcedoc-section section-element" id="b8100f5ba8bd048a7cf11d116fbbd73130c3c6f5">
+        <td class="sourcedoc-section section-signature">
+          <code><a href="https://copper-leaf.github.io/arcana/kotlindoc/core/arcana/library">Library</a></code>
+        </td>
+        <td class="sourcedoc-section section-comments content">
+        
+        </td>
+      </tr>
+      
+      </tbody>
+    </table>
+  </div>
+
+
+</div>
+
+        
+      
+    </div>
+  
+
+</div>
+
+        
+      
+    </div>
+  
+
+</div>
+
+</div>
+
+
+
+
+
+
+                    
+                
+            
+        
+    
+    <!-- end:inject components -->
+
+
+      </div>
+    
+    
+    
+      <div class="grow"></div>
+      <div class="page-footer">
+      
+        <nav class="pagination is-rounded footer-pagination" role="navigation" aria-label="pagination">
+
+  <a class="pagination-previous" disabled>
+    <span class="inner">
+      <span class="icon"><i class="fas fa-chevron-left"></i></span>
+      Previous
+    </span>
+  </a>
+
+
+
+  <a class="pagination-next" disabled>
+    <span class="inner">
+      Next
+      <span class="icon"><i class="fas fa-chevron-right"></i></span>
+    </span>
+  </a>
+
+</nav>
+
+<footer class="footer border-top">
+  <div class="content is-small">
+  <p>
+  Site proudly built with <a href="https://orchid.run/">Orchid</a>.<br>
+</p>
+
+  </div>
+</footer>
+
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- start:inject scripts -->
+<script defer  src="https://copper-leaf.github.io/arcana/Copper/6826c43f/releases/v5.4.0/js/all.js"></script>
+<script  src="https://copper-leaf.github.io/arcana/Copper/6826c43f/assets/js/bulma.js"></script>
+<script  src="https://copper-leaf.github.io/arcana/Copper/6826c43f/assets/js/bulma-accordion.min.js"></script>
+<script  src="https://copper-leaf.github.io/arcana/Copper/6826c43f/assets/js/bulma-tabs.js"></script>
+<script  src="https://copper-leaf.github.io/arcana/ajax/libs/prism/1.17.1/prism.min.js"></script>
+<script  src="https://copper-leaf.github.io/arcana/ajax/libs/prism/1.17.1/components/prism-java.min.js"></script>
+<script  src="https://copper-leaf.github.io/arcana/ajax/libs/prism/1.17.1/components/prism-kotlin.min.js"></script>
+<script  src="https://copper-leaf.github.io/arcana/ajax/libs/prism/1.17.1/components/prism-groovy.min.js"></script>
+<script  src="https://copper-leaf.github.io/arcana/ajax/libs/prism/1.17.1/components/prism-swift.min.js"></script>
+<!-- end:inject scripts -->
+
+</body>
+</html>

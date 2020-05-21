@@ -1,0 +1,35 @@
+{
+  "ownKey": "wiki",
+  "childrenPages": {"wiki": {
+    "ownKey": "wiki",
+    "childrenPages": {"page-one": {
+      "ownKey": "page-one",
+      "ownPages": [{
+        "reference": {
+          "path": "wiki",
+          "baseUrl": "https://copper-leaf.github.io/arcana",
+          "fileName": "page-one",
+          "extension": "html",
+          "usePrettyUrl": true,
+          "link": "https://copper-leaf.github.io/arcana/wiki/page-one"
+        },
+        "description": "",
+        "title": "Wiki Page One",
+        "content": "<p>Wiki Page One<\/p>\n"
+      }]
+    }},
+    "ownPages": [{
+      "reference": {
+        "path": "",
+        "baseUrl": "https://copper-leaf.github.io/arcana",
+        "fileName": "wiki",
+        "extension": "html",
+        "usePrettyUrl": true,
+        "link": "https://copper-leaf.github.io/arcana/wiki"
+      },
+      "description": "",
+      "title": "Wiki",
+      "content": "<html>\n <head><\/head>\n <body>\n  <ul> \n   <li><a href=\"https://copper-leaf.github.io/arcana/wiki/page-one\">Wiki Page One<\/a><\/li> \n  <\/ul> \n <\/body>\n<\/html>\n"
+    }]
+  }}
+}

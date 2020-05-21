@@ -1,0 +1,328 @@
+{
+  "ownKey": "index",
+  "childrenPages": {
+    "kotlindoc": {
+      "ownKey": "kotlindoc",
+      "childrenPages": {
+        "jvm": {
+          "ownKey": "jvm",
+          "childrenPages": {"arcana": {
+            "ownKey": "arcana",
+            "childrenPages": {"arcanaplatform": {
+              "ownKey": "arcanaplatform",
+              "ownPages": [{
+                "reference": {
+                  "path": "kotlindoc/jvm",
+                  "baseUrl": "https://copper-leaf.github.io/arcana",
+                  "fileName": "arcana/arcanaplatform",
+                  "extension": "html",
+                  "usePrettyUrl": true,
+                  "link": "https://copper-leaf.github.io/arcana/kotlindoc/jvm/arcana/arcanaplatform"
+                },
+                "description": "",
+                "title": "ArcanaPlatform",
+                "content": "<p>CommentComponent(kind=text, text=, value=null)<\/p>\n"
+              }]
+            }},
+            "ownPages": [{
+              "reference": {
+                "path": "kotlindoc/jvm",
+                "baseUrl": "https://copper-leaf.github.io/arcana",
+                "fileName": "arcana",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://copper-leaf.github.io/arcana/kotlindoc/jvm/arcana"
+              },
+              "description": "",
+              "title": "arcana",
+              "content": "<p>CommentComponent(kind=text, text=, value=null)<\/p>\n"
+            }]
+          }},
+          "ownPages": [{
+            "reference": {
+              "path": "kotlindoc",
+              "baseUrl": "https://copper-leaf.github.io/arcana",
+              "fileName": "jvm",
+              "extension": "html",
+              "usePrettyUrl": true,
+              "link": "https://copper-leaf.github.io/arcana/kotlindoc/jvm"
+            },
+            "description": "",
+            "title": "JVM",
+            "content": "<h1 id=\"arcana\"><a href=\"#arcana\" id=\"arcana\" class=\"anchor\"><\/a>arcana<\/h1>\n<p>A resource and template-engine abstraction layer for Kotlin<\/p>\n"
+          }]
+        },
+        "core": {
+          "ownKey": "core",
+          "childrenPages": {"arcana": {
+            "ownKey": "arcana",
+            "childrenPages": {
+              "arcanaplatform": {
+                "ownKey": "arcanaplatform",
+                "ownPages": [{
+                  "reference": {
+                    "path": "kotlindoc/core",
+                    "baseUrl": "https://copper-leaf.github.io/arcana",
+                    "fileName": "arcana/arcanaplatform",
+                    "extension": "html",
+                    "usePrettyUrl": true,
+                    "link": "https://copper-leaf.github.io/arcana/kotlindoc/core/arcana/arcanaplatform"
+                  },
+                  "description": "",
+                  "title": "ArcanaPlatform",
+                  "content": "<p>CommentComponent(kind=text, text=, value=null)<\/p>\n"
+                }]
+              },
+              "library": {
+                "ownKey": "library",
+                "ownPages": [{
+                  "reference": {
+                    "path": "kotlindoc/core",
+                    "baseUrl": "https://copper-leaf.github.io/arcana",
+                    "fileName": "arcana/library",
+                    "extension": "html",
+                    "usePrettyUrl": true,
+                    "link": "https://copper-leaf.github.io/arcana/kotlindoc/core/arcana/library"
+                  },
+                  "description": "",
+                  "title": "Library",
+                  "content": "<p>CommentComponent(kind=text, text=, value=null)<\/p>\n"
+                }]
+              }
+            },
+            "ownPages": [{
+              "reference": {
+                "path": "kotlindoc/core",
+                "baseUrl": "https://copper-leaf.github.io/arcana",
+                "fileName": "arcana",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://copper-leaf.github.io/arcana/kotlindoc/core/arcana"
+              },
+              "description": "",
+              "title": "arcana",
+              "content": "<p>CommentComponent(kind=text, text=, value=null)<\/p>\n"
+            }]
+          }},
+          "ownPages": [{
+            "reference": {
+              "path": "kotlindoc",
+              "baseUrl": "https://copper-leaf.github.io/arcana",
+              "fileName": "core",
+              "extension": "html",
+              "usePrettyUrl": true,
+              "link": "https://copper-leaf.github.io/arcana/kotlindoc/core"
+            },
+            "description": "",
+            "title": "Core",
+            "content": "<h1 id=\"arcana\"><a href=\"#arcana\" id=\"arcana\" class=\"anchor\"><\/a>arcana<\/h1>\n<p>A resource and template-engine abstraction layer for Kotlin<\/p>\n"
+          }]
+        },
+        "android": {
+          "ownKey": "android",
+          "childrenPages": {"arcana": {
+            "ownKey": "arcana",
+            "ownPages": [{
+              "reference": {
+                "path": "kotlindoc/android",
+                "baseUrl": "https://copper-leaf.github.io/arcana",
+                "fileName": "arcana",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://copper-leaf.github.io/arcana/kotlindoc/android/arcana"
+              },
+              "description": "",
+              "title": "arcana",
+              "content": "<p>CommentComponent(kind=text, text=, value=null)<\/p>\n"
+            }]
+          }},
+          "ownPages": [{
+            "reference": {
+              "path": "kotlindoc",
+              "baseUrl": "https://copper-leaf.github.io/arcana",
+              "fileName": "android",
+              "extension": "html",
+              "usePrettyUrl": true,
+              "link": "https://copper-leaf.github.io/arcana/kotlindoc/android"
+            },
+            "description": "",
+            "title": "Android",
+            "content": "<h1 id=\"arcana\"><a href=\"#arcana\" id=\"arcana\" class=\"anchor\"><\/a>arcana<\/h1>\n<p>A resource and template-engine abstraction layer for Kotlin<\/p>\n"
+          }]
+        },
+        "js": {
+          "ownKey": "js",
+          "childrenPages": {"arcana": {
+            "ownKey": "arcana",
+            "childrenPages": {"arcanaplatform": {
+              "ownKey": "arcanaplatform",
+              "ownPages": [{
+                "reference": {
+                  "path": "kotlindoc/js",
+                  "baseUrl": "https://copper-leaf.github.io/arcana",
+                  "fileName": "arcana/arcanaplatform",
+                  "extension": "html",
+                  "usePrettyUrl": true,
+                  "link": "https://copper-leaf.github.io/arcana/kotlindoc/js/arcana/arcanaplatform"
+                },
+                "description": "",
+                "title": "ArcanaPlatform",
+                "content": "<p>CommentComponent(kind=text, text=, value=null)<\/p>\n"
+              }]
+            }},
+            "ownPages": [{
+              "reference": {
+                "path": "kotlindoc/js",
+                "baseUrl": "https://copper-leaf.github.io/arcana",
+                "fileName": "arcana",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://copper-leaf.github.io/arcana/kotlindoc/js/arcana"
+              },
+              "description": "",
+              "title": "arcana",
+              "content": "<p>CommentComponent(kind=text, text=, value=null)<\/p>\n"
+            }]
+          }},
+          "ownPages": [{
+            "reference": {
+              "path": "kotlindoc",
+              "baseUrl": "https://copper-leaf.github.io/arcana",
+              "fileName": "js",
+              "extension": "html",
+              "usePrettyUrl": true,
+              "link": "https://copper-leaf.github.io/arcana/kotlindoc/js"
+            },
+            "description": "",
+            "title": "JS",
+            "content": "<h1 id=\"arcana\"><a href=\"#arcana\" id=\"arcana\" class=\"anchor\"><\/a>arcana<\/h1>\n<p>A resource and template-engine abstraction layer for Kotlin<\/p>\n"
+          }]
+        },
+        "ios": {
+          "ownKey": "ios",
+          "childrenPages": {"arcana": {
+            "ownKey": "arcana",
+            "childrenPages": {"arcanaplatform": {
+              "ownKey": "arcanaplatform",
+              "ownPages": [{
+                "reference": {
+                  "path": "kotlindoc/ios",
+                  "baseUrl": "https://copper-leaf.github.io/arcana",
+                  "fileName": "arcana/arcanaplatform",
+                  "extension": "html",
+                  "usePrettyUrl": true,
+                  "link": "https://copper-leaf.github.io/arcana/kotlindoc/ios/arcana/arcanaplatform"
+                },
+                "description": "",
+                "title": "ArcanaPlatform",
+                "content": "<p>CommentComponent(kind=text, text=, value=null)<\/p>\n"
+              }]
+            }},
+            "ownPages": [{
+              "reference": {
+                "path": "kotlindoc/ios",
+                "baseUrl": "https://copper-leaf.github.io/arcana",
+                "fileName": "arcana",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://copper-leaf.github.io/arcana/kotlindoc/ios/arcana"
+              },
+              "description": "",
+              "title": "arcana",
+              "content": "<p>CommentComponent(kind=text, text=, value=null)<\/p>\n"
+            }]
+          }},
+          "ownPages": [{
+            "reference": {
+              "path": "kotlindoc",
+              "baseUrl": "https://copper-leaf.github.io/arcana",
+              "fileName": "ios",
+              "extension": "html",
+              "usePrettyUrl": true,
+              "link": "https://copper-leaf.github.io/arcana/kotlindoc/ios"
+            },
+            "description": "",
+            "title": "iOS",
+            "content": "<h1 id=\"arcana\"><a href=\"#arcana\" id=\"arcana\" class=\"anchor\"><\/a>arcana<\/h1>\n<p>A resource and template-engine abstraction layer for Kotlin<\/p>\n"
+          }]
+        }
+      }
+    },
+    "wiki": {
+      "ownKey": "wiki",
+      "childrenPages": {"page-one": {
+        "ownKey": "page-one",
+        "ownPages": [{
+          "reference": {
+            "path": "wiki",
+            "baseUrl": "https://copper-leaf.github.io/arcana",
+            "fileName": "page-one",
+            "extension": "html",
+            "usePrettyUrl": true,
+            "link": "https://copper-leaf.github.io/arcana/wiki/page-one"
+          },
+          "description": "",
+          "title": "Wiki Page One",
+          "content": "<p>Wiki Page One<\/p>\n"
+        }]
+      }},
+      "ownPages": [{
+        "reference": {
+          "path": "",
+          "baseUrl": "https://copper-leaf.github.io/arcana",
+          "fileName": "wiki",
+          "extension": "html",
+          "usePrettyUrl": true,
+          "link": "https://copper-leaf.github.io/arcana/wiki"
+        },
+        "description": "",
+        "title": "Wiki",
+        "content": "<html>\n <head><\/head>\n <body>\n  <ul> \n   <li><a href=\"https://copper-leaf.github.io/arcana/wiki/page-one\">Wiki Page One<\/a><\/li> \n  <\/ul> \n <\/body>\n<\/html>\n"
+      }]
+    },
+    "releases": {
+      "ownKey": "releases",
+      "ownPages": [{
+        "reference": {
+          "path": "",
+          "baseUrl": "https://copper-leaf.github.io/arcana",
+          "fileName": "releases",
+          "extension": "html",
+          "usePrettyUrl": true,
+          "link": "https://copper-leaf.github.io/arcana/releases"
+        },
+        "description": "",
+        "title": "Releases",
+        "content": ""
+      }]
+    }
+  },
+  "ownPages": [
+    {
+      "reference": {
+        "path": "",
+        "baseUrl": "https://copper-leaf.github.io/arcana",
+        "fileName": "",
+        "extension": "html",
+        "usePrettyUrl": true,
+        "link": "https://copper-leaf.github.io/arcana"
+      },
+      "description": "",
+      "title": "Home",
+      "content": ""
+    },
+    {
+      "reference": {
+        "path": "",
+        "baseUrl": "https://copper-leaf.github.io/arcana",
+        "fileName": "404",
+        "extension": "html",
+        "usePrettyUrl": false,
+        "link": "https://copper-leaf.github.io/arcana/404.html"
+      },
+      "description": "",
+      "title": "Not Found",
+      "content": ""
+    }
+  ]
+}
