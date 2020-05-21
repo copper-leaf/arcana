@@ -3,11 +3,6 @@ plugins {
     `arcana-base`
 }
 
-repositories {
-    jcenter()
-    maven(url = "https://kotlin.bintray.com/kotlinx")
-}
-
 dependencies {
     orchidRuntimeOnly(Orchid.bundles.docs)
     orchidRuntimeOnly(Orchid.themes.copper)

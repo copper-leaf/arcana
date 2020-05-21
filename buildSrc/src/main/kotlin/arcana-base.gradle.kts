@@ -27,14 +27,31 @@ data class ProjectVersion(
     val fullVersion: String = "$releaseVersion${if (snapshot) snapshotSuffix else ""}"
 
     override fun toString(): String = fullVersion
+
+    fun debug(): String {
+        return """
+            |ProjectVersion(
+            |    major=$major
+            |    minor=$minor
+            |    patch=$patch
+            |    snapshot=$snapshot
+            |    snapshotSuffix=$snapshotSuffix
+            |    sha=$sha
+            |    commits=$commits
+            |    shortVersion=$shortVersion
+            |    releaseVersion=$releaseVersion
+            |    fullVersion=$fullVersion
+            |)
+        """.trimMargin()
+    }
 }
 
-fun runCommand(vararg command: String): String {
+fun runCommand(command: String): String {
     return runCatching {
         val stdout = ByteArrayOutputStream()
 
         exec {
-            commandLine(*command)
+            commandLine(*command.split(' ').toTypedArray())
             standardOutput = stdout
         }
 
@@ -42,11 +59,11 @@ fun runCommand(vararg command: String): String {
     }.getOrElse { "" }
 }
 
-fun getCurrentSha(): String = runCommand("git", "rev-parse", "HEAD")
-fun getLatestTagSha(): String = runCommand("git", "rev-list", "--tags", "--max-count=1")
-fun getLatestTagName(): String = runCommand("git", "describe", "--abbrev=0", "--tags")
-fun getCommitsSinceLastTag(latestTagName: String): List<String> = runCommand("git", "log", "${latestTagName}..HEAD", "--oneline", "--pretty=format:%s").lines().reversed()
-fun hasUncommittedChanges(): Boolean = runCommand("git", "status", "--porcelain").isBlank()
+fun getCurrentSha(): String = runCommand("git rev-parse HEAD")
+fun getLatestTagSha(): String = runCommand("git rev-list --tags --max-count=1")
+fun getLatestTagName(): String = runCommand("git describe --abbrev=0 --tags")
+fun getCommitsSinceLastTag(latestTagName: String): List<String> = runCommand("git log ${latestTagName}..HEAD --oneline --pretty=format:%s").lines().reversed()
+fun hasUncommittedChanges(): Boolean = runCommand("git status --porcelain").isBlank()
 
 fun String.parseVersion() : Triple<Int, Int, Int> {
     return this
@@ -72,7 +89,9 @@ fun getProjectVersion(
     val hasUncommittedChanges = hasUncommittedChanges()
 
     val (major, minor, patch) = when {
-        latestTagName.isBlank() -> initialVersion.parseVersion()
+        latestTagName.isBlank() -> {
+            initialVersion.parseVersion()
+        }
         else -> {
             var (_major, _minor, _patch) = latestTagName.parseVersion()
 
