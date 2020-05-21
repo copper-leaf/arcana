@@ -149,7 +149,7 @@ var fullVersion: String by project.extra
 
 ghUser = (System.getenv("GITHUB_ACTOR")?.toString() ?: project.properties["github_username"]?.toString()) ?: ""
 ghToken = (System.getenv("GITHUB_TOKEN")?.toString() ?: project.properties["githubToken"]?.toString()) ?: ""
-projectVersion = getProjectVersion(logChanges = false)
+projectVersion = getProjectVersion(logChanges = true)
 shortVersion = projectVersion.shortVersion
 releaseVersion = projectVersion.releaseVersion
 fullVersion = projectVersion.fullVersion
