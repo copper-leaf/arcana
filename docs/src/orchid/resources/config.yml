@@ -51,8 +51,9 @@ services:
     stages:
       - type: requireChangelogVersion
       - type: githubReleases
-        repo: 'orchidhq/orchid'
+        repo: 'copper-leaf/arcana'
         username: 'cjbrooks12'
         commitish: 'master'
       - type: githubPages
-        repo: 'orchidhq/orchid'
+        repo: 'copper-leaf/arcana'
+        username: 'cjbrooks12'
