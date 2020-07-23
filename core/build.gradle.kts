@@ -32,7 +32,13 @@ android {
         }
     }
     testOptions {
-        unitTests.isIncludeAndroidResources = true
+        unitTests(delegateClosureOf<com.android.build.gradle.internal.dsl.TestOptions.UnitTestOptions> {
+            setIncludeAndroidResources(true)
+            setReturnDefaultValues(true)
+        })
+    }
+    lintOptions {
+        disable("GradleDependency")
     }
 }
 
@@ -58,6 +64,7 @@ kotlin {
             dependencies {
                 implementation(Kotlin.stdlib.common)
                 implementation(KotlinX.coroutines.coreCommon)
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-io:0.1.16")
             }
         }
         val commonTest by getting {
@@ -149,5 +156,11 @@ ktlint {
     filter {
         exclude("**/generated/**")
         include("**/kotlin/**")
+    }
+}
+
+tasks.withType<Test> {
+    testLogging {
+        showStandardStreams = true
     }
 }
